@@ -60,3 +60,6 @@ RECOVERY_SDCARD_ON_DATA := true
 
 TW_THEME := landscape_hdpi
 TW_HACKED_BL_BUTTON := true
+TW_NO_BATT_PERCENT := true
+TW_NO_SCREEN_TIMEOUT := true
+TW_AMONET := true
