@@ -1,0 +1,3 @@
+add_lunch_combo omni_sloane-eng
+add_lunch_combo omni_sloane-userdebug
+add_lunch_combo omni_sloane-user
