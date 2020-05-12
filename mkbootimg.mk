@@ -1,6 +1,6 @@
 LOCAL_PATH := $(call my-dir)
 
-TARGET_PREBUILT_SECOND := device/amazon/sloane/prebuilt/stage2.img
+TARGET_PREBUILT_SECOND := device/amazon/sloane/prebuilt/second.img
 
 ## Overload bootimg generation: Same as the original, + --second arg
 $(INSTALLED_BOOTIMAGE_TARGET): $(MKBOOTIMG) $(INTERNAL_BOOTIMAGE_FILES) $(INSTALLED_SECONDIMAGE_TARGET)
