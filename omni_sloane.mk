@@ -10,7 +10,10 @@ PRODUCT_BRAND := Android
 PRODUCT_MANUFACTURER := Amazon
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    ro.debuggable=1
+    ro.debuggable=1 \
+    persist.sys.usb.config=mtp,adb \
+    sys.usb.config=mtp,adb \
+    ro.allow.mock.location=0 \
 
 PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/prebuilt/zImage:kernel
