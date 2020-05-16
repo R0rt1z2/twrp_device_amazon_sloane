@@ -14,6 +14,8 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.sys.usb.config=mtp,adb \
     sys.usb.config=mtp,adb \
     ro.allow.mock.location=0 \
+    service.adb.tcp.port=5555 \
+    twrp.usb.mode=1 \
 
 PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/prebuilt/zImage:kernel

@@ -6,10 +6,7 @@ on early-fs
 on boot
     exec /sbin/sh /amonet-fixup.sh
 
-    # Reset the USB port by enabling it, disabling it, and then reenabling it.
-    write /sys/devices/bus.8/11270000.SSUSB/mode 1
-    write /sys/devices/bus.8/11270000.SSUSB/mode 0
-    write /sys/devices/bus.8/11270000.SSUSB/mode 1
+    exec /sbin/sh /init-usb-bg.sh
 
 on fs
     symlink /dev/block/platform/mtk-msdc.0 /dev/block/platform/soc
