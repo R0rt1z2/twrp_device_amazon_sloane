@@ -1,7 +1,7 @@
 on boot
     exec /sbin/sh /amonet-fixup.sh
 
-    exec /sbin/sh /init-usb-bg.sh
+    exec /sbin/sh /init-usb.sh
 
 on fs
     symlink /dev/block/platform/mtk-msdc.0 /dev/block/platform/soc
