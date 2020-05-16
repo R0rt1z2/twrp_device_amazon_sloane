@@ -64,3 +64,4 @@ TW_NO_BATT_PERCENT := true
 TW_NO_SCREEN_TIMEOUT := true
 #TW_AMONET := true
 TW_IP_ADDRESS := true
+TW_IP_SIDELOAD := true
