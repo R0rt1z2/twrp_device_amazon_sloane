@@ -1,0 +1,17 @@
+#!/sbin/sh
+
+case "$1" in
+	deconfig)
+		ifconfig $interface 0.0.0.0
+		;;
+
+	renew|bound)
+		NETMASK=""
+		[ -n "$subnet" ] && NETMASK="netmask $subnet"
+		BROADCAST="broadcast +"
+		[ -n "$broadcast" ] && BROADCAST="broadcast $broadcast"
+		ifconfig $interface $ip $NETMASK $BROADCAST
+		;;
+esac
+
+exit 0

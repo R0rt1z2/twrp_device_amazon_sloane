@@ -1,6 +1,11 @@
 on boot
     exec /sbin/sh /amonet-fixup.sh
 
+    # Set up DHCPC
+    exec /sbin/sh /prepare-eth.sh
+    setprop service.adb.tcp.port 5555
+    setprop ctl.restart adbd
+
     # Reset the USB port by enabling it, disabling it, and then reenabling it.
     write /sys/devices/bus.8/11270000.SSUSB/mode 1
     write /sys/devices/bus.8/11270000.SSUSB/mode 0
