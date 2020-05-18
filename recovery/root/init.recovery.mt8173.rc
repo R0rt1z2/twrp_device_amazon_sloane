@@ -14,5 +14,5 @@ on property:amonet.preloader=rw
 on property:amonet.preloader=ro
     write /sys/block/mmcblk0boot0/force_ro 1
 
-service dhcp /sbin/udhcpc -b eth0
+service dhcp /sbin/udhcpc -b -i eth0
     seclabel u:r:recovery:s0
