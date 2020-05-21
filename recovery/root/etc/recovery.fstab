@@ -10,3 +10,5 @@
 
 /external_sd	auto	/dev/block/mmcblk1p1	/dev/block/mmcblk1	flags=display="Micro SDcard";storage;wipeingui;removable
 /usb		    auto    /dev/block/sda1		    /dev/block/sda		flags=display="USB";storage;wipeingui;removable
+
+/idme           emmc    /dev/block/mmcblk0boot1                     flags=display="IDME";backup=1
