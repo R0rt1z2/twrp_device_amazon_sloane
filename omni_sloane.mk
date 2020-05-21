@@ -16,6 +16,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.allow.mock.location=0 \
     service.adb.tcp.port=5555 \
     twrp.usb.mode=1 \
+    network.eth0.ready=false \
 
 PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/prebuilt/zImage:kernel
