@@ -6,6 +6,7 @@ on boot
     exec /sbin/sh /init-eth.sh
 
 on fs
+    exec /sbin/rm -rf /dev/block/bootdevice
     symlink /dev/block/platform/mtk-msdc.0 /dev/block/platform/soc
     symlink /dev/block/platform/mtk-msdc.0 /dev/block/bootdevice
 
